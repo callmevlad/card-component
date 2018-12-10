@@ -15,7 +15,7 @@ const Wrapper = styled.div`
   justify-content: space-between;
 
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("nyc.jpg");
+    url("${props => props.bgImage || 'example-bg.png'}");
   background-position: center center;
   background-size: cover;
   background-repeat: none;
@@ -71,7 +71,7 @@ class Card extends Component {
     const { props } = this;
 
     return (
-      <Wrapper>
+      <Wrapper bgImage={props.bgImage}>
         {props.badgeText ? (
           <Badge badgeColor={props.badgeColor}>{props.badgeText}</Badge>
         ) : null}

@@ -8,9 +8,10 @@ export default class App extends Component {
     return (
       <div className="App">
         <Card
-          title="New York"
+          title="New York City"
           buttonText="Read more"
-          buttonLink="https://www.nycgo.com/"
+          buttonUrl="https://www.nycgo.com/"
+          bgImage="nyc.jpg"
           badgeText="Featured"
         >
           In this city, no two experiences are alike. To all who refuse to
