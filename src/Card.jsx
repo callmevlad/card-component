@@ -72,8 +72,8 @@ class Card extends Component {
 
     return (
       <Wrapper bgImage={props.bgImage}>
-        {props.badgeText ? (
-          <Badge badgeColor={props.badgeColor}>{props.badgeText}</Badge>
+        {props.isFeatured ? (
+          <Badge>Featured</Badge>
         ) : null}
         <Heading>{props.title || "Title"}</Heading>
         <Paragraph>{props.children}</Paragraph>
