@@ -68,7 +68,7 @@ const Badge = styled.div`
 
 class Card extends Component {
   render() {
-    const {props} = this;
+    const { props } = this;
 
     return (
       <Wrapper>
