@@ -12,7 +12,7 @@ export default class App extends Component {
           buttonText="Read more"
           buttonUrl="https://www.nycgo.com/"
           bgImage="nyc.jpg"
-          badgeText="Featured"
+          isFeatured={true}
         >
           In this city, no two experiences are alike. To all who refuse to
           settle for sameness: we welcome you.
